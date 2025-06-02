@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/BlackCounterHD/filecompressor/BitInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/BlackCounterHD/filecompressor/BitInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/BlackCounterHD/filecompressor/FileCompressor_Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/BlackCounterHD/filecompressor/FileCompressor_Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output.huff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.huff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/res.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/res.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +222,8 @@
       <workItem from="1748877917203" duration="935000" />
       <workItem from="1748879398916" duration="3294000" />
       <workItem from="1748883100775" duration="845000" />
+      <workItem from="1748883970695" duration="938000" />
+      <workItem from="1748889794982" duration="470000" />
     </task>
     <servers />
   </component>
