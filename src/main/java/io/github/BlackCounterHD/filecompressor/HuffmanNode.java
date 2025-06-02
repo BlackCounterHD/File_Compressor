@@ -1,10 +1,10 @@
 package io.github.BlackCounterHD.filecompressor;
 
-interface huff_cls1{
+interface huff_node{
     boolean isLeaf();
     public int compareTo(HuffmanNode that);
 }
-public class HuffmanNode implements Comparable<HuffmanNode>,huff_cls1 {
+public class HuffmanNode implements Comparable<HuffmanNode>,huff_node {
     byte value; //we ll go each charac in the file and keep it as a byte value;
     int freq; // the nr of aparitions of each char
     HuffmanNode left, right;

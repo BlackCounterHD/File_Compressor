@@ -4,7 +4,12 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class BitOutputStream implements Closeable {
+interface bit_output{
+    public void write_Bits(long value, int n) throws IOException;
+    public void write_Bits(int value, int n) throws IOException;
+    public void write_Bit(int bit) throws IOException;
+}
+public class BitOutputStream implements Closeable,bit_output {
 
     private final OutputStream out;
     private int current_byte = 0;
@@ -14,16 +19,27 @@ public class BitOutputStream implements Closeable {
         this.out=out;
     }
 
-    public void write_Bits(long value,int n) throws IOException {
-        if(n<0 || n>64){// wee need only 8 bits for every ascii value/character
-            throw new IllegalArgumentException("illegal bit count: "+n);
-        }
-        for(int i=n-1;i>=0;i++){
-            int bit=(int)((value>>>i) & 1L);
-            write_Bit(bit);
+    @Override
+    public void write_Bits(long value, int n) throws IOException {
+        if (n < 0 || n > 64) throw new IllegalArgumentException("illegal bit count: " + n);
+        if (n > 32) {
+            int highBits = (int)(value >>> (n - 32));
+            write_Bits(highBits,32);
+            write_Bits((int)value,n - 32);
+        } else {
+            write_Bits((int)value, n);
         }
     }
 
+    @Override
+    public void write_Bits(int value, int n) throws IOException {
+        if (n < 0 || n > 32) throw new IllegalArgumentException();
+        for (int i = n - 1; i >= 0; i--) {
+            write_Bit((value >>> i) & 1);
+        }
+    }
+
+    @Override
     public void write_Bit(int bit) throws IOException{
         if(bit!=0 && bit!=1){
             throw new IllegalArgumentException("bit must be 0 or 1");

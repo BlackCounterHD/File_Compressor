@@ -13,7 +13,7 @@ interface encoder_interface{
 }
 public class HuffmanEncoder implements encoder_interface{
     private static int R=256;
-    private final int[] freq;
+    private int[] freq;
     private HuffmanNode root;
     private String[] codes;
 
@@ -21,6 +21,8 @@ public class HuffmanEncoder implements encoder_interface{
         this.freq=countFreq(in);
     }
 
+    public HuffmanEncoder(){
+    }
     //use inputstream-byte‐oriented I/O. \ read() returns an int;
     @Override
     public int[] countFreq(InputStream inputStream) throws IOException{

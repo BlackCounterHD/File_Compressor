@@ -2,15 +2,18 @@ package io.github.BlackCounterHD.filecompressor;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
 
 public class FileCompressor_Result {
 
     public static void compress(Path Input_Path,Path Output_Path) throws IOException{
 
         byte[] data=Files.readAllBytes(Input_Path);
-        long Original_Length= data.length;
+        int Original_Length= data.length;
 
         HuffmanEncoder encoder = new HuffmanEncoder(new ByteArrayInputStream(data));
 
@@ -20,32 +23,27 @@ public class FileCompressor_Result {
         try (BitOutputStream bout = new BitOutputStream(
                 Files.newOutputStream(Output_Path))) {
 
-            // 4) Write header: length + freq table
             encoder.writeHeader(bout, Original_Length);
 
-            // 5) Write payload bits
-            encoder.encodeData(
-                    new ByteArrayInputStream(data),
-                    bout,
-                    codes
-            );
-            // bout.close() will flush partial byte
+            encoder.encodeData(new ByteArrayInputStream(data), bout, codes);
+
         }
 
     }
-    /*public static void decompress(Path inPath, Path outPath) throws IOException {
-        try (BitInputStream bin = new BitInputStream(
-                 Files.newInputStream(inPath));
+    public static void decompress(Path inPath, Path outPath) throws IOException {
+        try (BitInputStream bin = new BitInputStream(Files.newInputStream(inPath));
              OutputStream out = Files.newOutputStream(outPath)) {
 
-            // 1) Read original length
-            long originalLength = HuffmanDecoder.readOriginalLength(bin);
-            // 2) Read freq table
-            int[] freq = HuffmanDecoder.readFreqTable(bin);
-            // 3) Rebuild tree
-            HuffmanNode root = new HuffmanEncoder(null).buildTree(freq);
-            // 4) Decode payload
-            HuffmanDecoder.decode(bin, out, root, originalLength); //originalLenght-trebe long
+            HuffmanDecoder decoder=new HuffmanDecoder();
+
+            long originalLength = decoder.readOriginalLength(bin);
+
+            int[] freq = decoder.readFreqTable(bin);
+
+            HuffmanEncoder encoder = new HuffmanEncoder();
+            HuffmanNode root = encoder.buildTree(freq);
+
+            decoder.decode(bin, out, root, originalLength);
         }
     }
     public static void main(String[] args) throws IOException {
@@ -63,5 +61,5 @@ public class FileCompressor_Result {
             default:
                 System.out.println("Unknown mode: " + args[0]);
         }
-    }*/
+    }
 }
