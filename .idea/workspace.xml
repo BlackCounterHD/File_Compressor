@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sample/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sample/output.huff" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/output.huff" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
     <configuration name="FileCompressor_Result" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.BlackCounterHD.filecompressor.FileCompressor_Result" />
       <module name="File_Compressor" />
-      <option name="PROGRAM_PARAMETERS" value="-d src/main/resources/sample/output.huff src/main/resources/sample/res.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-d src/resources/sample/output.huff src/resources/sample/res.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="io.github.BlackCounterHD.filecompressor.*" />
@@ -248,7 +249,7 @@
       <workItem from="1750879400932" duration="400000" />
       <workItem from="1750880736369" duration="1916000" />
       <workItem from="1750882788618" duration="2058000" />
-      <workItem from="1750884913658" duration="2674000" />
+      <workItem from="1750884913658" duration="3101000" />
     </task>
     <task id="LOCAL-00001" summary="updated README.md">
       <option name="closed" value="true" />
