@@ -54,11 +54,17 @@ java FileCompressor_Result -d output.huff restored.txt
 ## File Format Structure
 
 The compressed file consists of three parts:
+
 **Header:**
+
 - 64-bit long: original number of bytes in the input
 - 256 × 32-bit integers: frequency table for byte values 0–255 (lets decoder rebuild the Huffman tree)
-  **Payload Bits**
+
+**Payload Bits**
+
 - The actual compressed bit-stream, written via encodeData()
-  **Padding**
+
+**Padding**
+
 -  Up to 7 zero bits to fill the final byte 
 
