@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="updated README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/File_Compressor_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/output.huff" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/output.huff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/res.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/res.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +248,7 @@
       <workItem from="1750879400932" duration="400000" />
       <workItem from="1750880736369" duration="1916000" />
       <workItem from="1750882788618" duration="2058000" />
-      <workItem from="1750884913658" duration="1546000" />
+      <workItem from="1750884913658" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="updated README.md">
       <option name="closed" value="true" />

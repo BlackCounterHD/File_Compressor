@@ -24,6 +24,13 @@ First, clone this repository using Git:
 git clone https://github.com/BlackCounterHD/File_Compressor.git
 cd File_Compressor
 ```
+### Run with JAR
+To use the precompiled `.jar`:
+
+```bash
+java -jar dist/File_Compressor.jar -c input.txt output.huff
+java -jar dist/File_Compressor.jar -d output.huff restored.txt
+```
 
 ### Compile the Code
 
