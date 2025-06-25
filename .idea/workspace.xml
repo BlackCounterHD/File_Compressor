@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="File_Compressor:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample/output.huff" afterDir="false" />
+    <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="updated README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/File_Compressor_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output.huff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/res.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample/res.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/output.huff" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/output.huff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample/res.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sample/res.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,46 +53,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.FileCompressor_Result.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitInputStream_Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitInputStream_Test.func2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitInputStream_Test.func3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitOutputStream_test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitOutputStream_test.writeBitsMethod2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BitOutputStream_test.writeBitsMethod3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HuffmanEncoderTest_Build_Tree.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HuffmanEncoderTest_Count_Freq.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Huffman_Header_Test.encode_data_example.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Huffman_Header_Test.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.File_Compressor [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/proiecte_intellij_java/File_Compressor4/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/proiecte_intellij_java/File_Compressor_Huffman_Trie2/src/main/java/io/github/BlackCounterHD/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FileCompressor_Result.executor": "Run",
+    "JUnit.BitInputStream_Test.executor": "Run",
+    "JUnit.BitInputStream_Test.func2.executor": "Run",
+    "JUnit.BitInputStream_Test.func3.executor": "Run",
+    "JUnit.BitOutputStream_test.executor": "Run",
+    "JUnit.BitOutputStream_test.writeBitsMethod2.executor": "Run",
+    "JUnit.BitOutputStream_test.writeBitsMethod3.executor": "Run",
+    "JUnit.HuffmanEncoderTest_Build_Tree.executor": "Run",
+    "JUnit.HuffmanEncoderTest_Count_Freq.executor": "Run",
+    "JUnit.Huffman_Header_Test.encode_data_example.executor": "Run",
+    "JUnit.Huffman_Header_Test.executor": "Run",
+    "Maven.File_Compressor [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/proiecte_intellij_java/File_Compressor4/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/proiecte_intellij_java/File_Compressor_Huffman_Trie2/src/main/java/io/github/BlackCounterHD/Main.java",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\proiecte_intellij_java\File_Compressor4\src\main\resources" />
       <recent name="D:\proiecte_intellij_java\File_Compressor2\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\proiecte_intellij_java\File_Compressor4\src\main" />
+      <recent name="D:\proiecte_intellij_java\File_Compressor4\src\test" />
+      <recent name="D:\proiecte_intellij_java\File_Compressor4\src" />
       <recent name="D:\proiecte_intellij_java\File_Compressor4\src\main\resources\sample" />
       <recent name="D:\proiecte_intellij_java\File_Compressor2\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.FileCompressor_Result">
@@ -239,11 +250,34 @@
       <workItem from="1750862827411" duration="1748000" />
       <workItem from="1750878851242" duration="35000" />
       <workItem from="1750879400932" duration="400000" />
-      <workItem from="1750880736369" duration="851000" />
+      <workItem from="1750880736369" duration="1916000" />
+      <workItem from="1750882788618" duration="2058000" />
+      <workItem from="1750884913658" duration="1546000" />
     </task>
+    <task id="LOCAL-00001" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1750881620768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750881620768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1750881823565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750881823565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>
