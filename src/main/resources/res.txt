@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Many of the designations used by manufacturers and sellers to distinguish their products are claimed as
 trademarks. Where those designations appear in this book, and the publisher was aware of a trademark
 claim, the designations have been printed with initial capital letters or in all capitals.
@@ -29,3 +30,13 @@ ISBN-13: 978-0-321-57351-3
 ISBN-10: 0-321-57351-X
 Text printed in the United States on recycled paper at Courier in Westford, Massachusetts.
 First printing, March 2011
+=======
+
+GG!
+
+Hello, Huffman!
+This is a small test.
+asssssssssssssssssssssssssssssssssssdxzccccccccccc
+dqwwwwwwwwwwwwwwwwwwwwwwd999999999999312312ads as dasdweqe qd/a///eqw>
+dqwdqdqw
+>>>>>>> a60ddcbd3bddf37d51e90bae89d26bd4e8deead7

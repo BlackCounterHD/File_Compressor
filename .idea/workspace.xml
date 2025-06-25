@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="" />
+=======
+    <list default="true" id="9c7e5c11-db20-4ef3-9c0c-218fb13c2ad9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> a60ddcbd3bddf37d51e90bae89d26bd4e8deead7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +65,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;D:/proiecte_intellij_java/File_Compressor3&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;D:/proiecte_intellij_java/File_Compressor4/src/main/resources&quot;,
+>>>>>>> a60ddcbd3bddf37d51e90bae89d26bd4e8deead7
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,6 +85,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\proiecte_intellij_java\File_Compressor4\src\main\resources" />
       <recent name="D:\proiecte_intellij_java\File_Compressor2\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -216,9 +227,17 @@
       <workItem from="1748821226594" duration="44000" />
       <workItem from="1748863704360" duration="7810000" />
       <workItem from="1748874017627" duration="905000" />
+<<<<<<< HEAD
       <workItem from="1748874959569" duration="2999000" />
       <workItem from="1748879373955" duration="3656000" />
       <workItem from="1749726357991" duration="13000" />
+=======
+      <workItem from="1748877917203" duration="935000" />
+      <workItem from="1748879398916" duration="3294000" />
+      <workItem from="1748883100775" duration="845000" />
+      <workItem from="1748883970695" duration="938000" />
+      <workItem from="1748889794982" duration="470000" />
+>>>>>>> a60ddcbd3bddf37d51e90bae89d26bd4e8deead7
     </task>
     <servers />
   </component>

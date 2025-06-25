@@ -1,9 +1,6 @@
 package io.github.BlackCounterHD.filecompressor;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -12,33 +9,39 @@ public class FileCompressor_Result {
 
     public static void compress(Path Input_Path,Path Output_Path) throws IOException{
 
-        byte[] data=Files.readAllBytes(Input_Path);
-        int Original_Length= data.length;
+        HuffmanEncoder encoder;
+        int[] freq;
+        try (InputStream in = new BufferedInputStream(Files.newInputStream(Input_Path))) {
+            encoder = new HuffmanEncoder(in);
+        }
 
-        HuffmanEncoder encoder = new HuffmanEncoder(new ByteArrayInputStream(data));
+        try (InputStream in = new BufferedInputStream(Files.newInputStream(Input_Path))) {
+            freq = encoder.countFreq(in);
+        }
 
-        int[] freq=encoder.countFreq(new ByteArrayInputStream(data));
-        HuffmanNode root=encoder.buildTree(freq);
-        String[] codes=encoder.buildCodeTable(root);
-        try (BitOutputStream bout = new BitOutputStream(
-                Files.newOutputStream(Output_Path))) {
 
+        HuffmanNode root = encoder.buildTree(freq);
+        String[] codes = encoder.buildCodeTable(root);
+
+        long Original_Length = Files.size(Input_Path);
+
+        try (InputStream in = new BufferedInputStream(Files.newInputStream(Input_Path));
+                BitOutputStream bout = new BitOutputStream(new BufferedOutputStream(Files.newOutputStream(Output_Path)))
+        ) {
             encoder.writeHeader(bout, Original_Length);
-
-            encoder.encodeData(new ByteArrayInputStream(data), bout, codes);
-
+            encoder.encodeData(in, bout, codes);
         }
 
     }
     public static void decompress(Path inPath, Path outPath) throws IOException {
-        try (BitInputStream bin = new BitInputStream(Files.newInputStream(inPath));
-             OutputStream out = Files.newOutputStream(outPath)) {
-
-            HuffmanDecoder decoder=new HuffmanDecoder();
+        try (BitInputStream bin = new BitInputStream(new BufferedInputStream(Files.newInputStream(inPath)));
+                OutputStream out = new BufferedOutputStream(Files.newOutputStream(outPath))
+        ) {
+            HuffmanDecoder decoder = new HuffmanDecoder();
 
             long originalLength = decoder.readOriginalLength(bin);
-
             int[] freq = decoder.readFreqTable(bin);
+
 
             HuffmanEncoder encoder = new HuffmanEncoder();
             HuffmanNode root = encoder.buildTree(freq);
