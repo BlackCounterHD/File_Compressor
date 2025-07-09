@@ -28,8 +28,8 @@ cd File_Compressor
 To use the precompiled `.jar`:
 
 ```bash
-java -jar dist/File_Compressor.jar -c input.txt output.huff
-java -jar dist/File_Compressor.jar -d output.huff restored.txt
+java -jar out/artifacts/File_Compressor_jar/File_Compressor.jar -c src/resources/sample/input.txt src/resources/sample/output.huff
+java -jar out/artifacts/File_Compressor_jar/File_Compressor.jar -d src/resources/sample/output.huff src/resources/sample/res.txt 
 ```
 
 ### Compile the Code
@@ -55,6 +55,7 @@ java FileCompressor_Result -d output.huff restored.txt
 ## Prerequisites
 
 - **JDK 8** or later installed.
+- **JDK 23** or lajter for .jar runnable
 - A shell/terminal window (Windows CMD, PowerShell, Linux/macOS Terminal, etc.).
 - (Optional) `jar` tool if you want to package into a runnable JAR.
 
